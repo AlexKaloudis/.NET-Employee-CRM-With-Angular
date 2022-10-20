@@ -1,0 +1,233 @@
+{
+	"info": {
+		"_postman_id": "7cf7999f-fece-4ace-afab-d9dd1fd7969d",
+		"name": "Employee-Deparment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Department",
+			"item": [
+				{
+					"name": "Add Department",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"departmentName\": \"IT\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5150/api/Department",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5150",
+							"path": [
+								"api",
+								"Department"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Department",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5150/api/Department?=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5150",
+							"path": [
+								"api",
+								"Department"
+							],
+							"query": [
+								{
+									"key": null,
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Department",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"departmentId\": 2,\r\n  \"departmentName\": \"university\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5150/api/Department",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5150",
+							"path": [
+								"api",
+								"Department"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Department",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5150/api/Department?depId=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5150",
+							"path": [
+								"api",
+								"Department"
+							],
+							"query": [
+								{
+									"key": "depId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Employee",
+			"item": [
+				{
+					"name": "Add Employee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"EmployeeId\": 1,\r\n        \"EmployeeName\": \"Giorgos\",\r\n        \"Department\": \"IT\",\r\n        \"PhotoFileName\": \"anonymous.png\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5150/api/Employee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5150",
+							"path": [
+								"api",
+								"Employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Employee",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5150/api/Employee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5150",
+							"path": [
+								"api",
+								"Employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Employee",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"EmployeeId\": 1,\r\n        \"EmployeeName\": \"Giorgos\",\r\n        \"Department\": \"IT\",\r\n        \"PhotoFileName\": \"anonymous.png\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5150/api/Department",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5150",
+							"path": [
+								"api",
+								"Department"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete employee",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5150/api/Employee?empId=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5150",
+							"path": [
+								"api",
+								"Employee"
+							],
+							"query": [
+								{
+									"key": "empId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
